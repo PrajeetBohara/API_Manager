@@ -5,7 +5,7 @@ def save_to_text():
     api = box_api.get()
     with open("data.txt","a") as file:
         file.write(f"{website} | {api} \n")
-        messagebox.showinfo("Information", "Saved Successfully")
+        messagebox.showinfo("Update", "Saved Successfully")
     box_website.delete(0,END)
     box_api.delete(0,END)
 
